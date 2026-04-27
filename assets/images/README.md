@@ -1,20 +1,55 @@
-# Directorio de Imágenes
+# Assets de Imagen - Bar Rock & Cántabro
 
-Este directorio está destinado a almacenar todas las imágenes del sitio web.
+## Archivos Incluidos
 
-## Archivos requeridos:
+### LOGO.jpg (400x150px)
+- **Ubicación:** `assets/images/LOGO.jpg`
+- **Descripción:** Logotipo principal del bar con diseño que fusiona rock y tradición cántabra
+- **Características:**
+  - Gradiente superior rojo rockero (#c41e3a → #8b0000)
+  - Gradiente inferior cobre (#b87333 → #d4a574)
+  - Guitarra eléctrica estilizada (izquierda)
+  - Gaita cántabra estilizada (derecha)
+  - Texto "ROCK & CÁNTABRO" en blanco
+- **Usos:** Header, footer, mobile menu, branding general
 
-1. **LOGO.jpg** - El logotipo principal del bar (requerido)
-   - Dimensiones recomendadas: 500x200px (proporción 5:2)
-   - Formato: JPG o PNG con fondo transparente preferiblemente
-   - El logo debe tener buen contraste para funcionar sobre fondos oscuros
+### LOGO.svg (400x150px)
+- **Ubicación:** `assets/images/LOGO.svg`
+- **Descripción:** Versión vectorial del logotipo
+- **Ventajas:** Escalable infinitamente, ideal para impresión y alta resolución
+- **Usos alternativo:** Puede usarse como fallback o para versiones de alta DPI
 
-2. **Imágenes sugeridas para completar:**
-   - `hero-bg.jpg` - Imagen de fondo para la sección hero (1920x1080px)
-   - `historia.jpg` - Imagen del local para la sección historia (800x600px)
-   - `evento-1.jpg`, `evento-2.jpg`, etc. - Imágenes para cards de eventos (600x400px)
-   - `galeria-1.jpg` a `galeria-5.jpg` - Imágenes para la galería (diversos tamaños)
+### favicon.jpg (32x32px)
+- **Ubicación:** `assets/images/favicon.jpg`
+- **Descripción:** Favicon del sitio web
+- **Características:**
+  - Mismo gradiente rojo-cobre
+  - Símbolo simplificado de guitarra
+- **Usos:** Pestañas del navegador, bookmarks, apple-touch-icon
 
-## Nota:
+## Cómo Reemplazar con Tu Logo Real
 
-Actualmente el sitio web utiliza placeholders visuales (emojis y fondos de color) que funcionan perfectamente hasta que se añadan las imágenes reales. El código incluye manejo de errores para el logo: si no se encuentra LOGO.jpg, muestra automáticamente un fallback con texto e icono.
+Si tienes un archivo `LOGO.jpg` profesional:
+
+1. Guarda tu logo como `LOGO.jpg` (recomendado 400x150px o proporción similar)
+2. Asegúrate de que tenga fondo transparente o contraste adecuado para fondos oscuros
+3. Reemplaza el archivo en esta carpeta
+4. El sitio web lo cargará automáticamente gracias al sistema de fallback
+
+## Optimización Recomendada
+
+Para producción, considera:
+- Comprimir imágenes con herramientas como TinyPNG o ImageOptim
+- Generar versiones WebP para mejor rendimiento
+- Crear múltiples tamaños para responsive images (`srcset`)
+
+## Paleta de Colores del Logo
+
+| Color | HEX | Uso |
+|-------|-----|-----|
+| Rojo Rock | #c41e3a | Gradiente superior, acentos |
+| Vino Oscuro | #8b0000 | Gradiente superior |
+| Cobre | #b87333 | Gradiente inferior, detalles |
+| Arena | #d4a574 | Gradiente inferior |
+| Blanco | #ffffff | Texto principal |
+| Negro | #141414 | Fondo base |
