@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bar Rock & Cántabro - Donde el rock se encuentra con la tradición cántabra. Música en vivo, ambiente auténtico y la mejor experiencia nocturna.">
+    <meta name="keywords" content="bar, rock, música en vivo, Cantabria, conciertos, copas, ambiente nocturno">
+    <meta name="author" content="Bar Rock & Cántabro">
+    <meta name="theme-color" content="#1a1a1a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bar Rock & Cántabro - Música y Tradición">
+    <meta property="og:description" content="Donde el rock se encuentra con la tradición cántabra. Música en vivo, ambiente auténtico.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <title>Bar Rock & Cántabro | Música en Vivo y Tradición</title>
+    
+    <!-- Favicon placeholder - replace with actual favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎸</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <div class="logo-wrapper">
+                    <img src="assets/images/LOGO.jpg" alt="Bar Rock & Cántabro Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback">
+                        <span class="logo-icon">🎸</span>
+                        <span class="logo-text">ROCK & CÁNTABRO</span>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#historia" class="nav-link">Historia</a></li>
+                    <li class="nav-item"><a href="#carta" class="nav-link">Carta</a></li>
+                    <li class="nav-item"><a href="#eventos" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <a href="#reservas" class="btn btn-reserve header-reserve">Reservar</a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+                <li class="mobile-nav-item"><a href="#historia" class="mobile-nav-link">Historia</a></li>
+                <li class="mobile-nav-item"><a href="#carta" class="mobile-nav-link">Carta</a></li>
+                <li class="mobile-nav-item"><a href="#eventos" class="mobile-nav-link">Eventos</a></li>
+                <li class="mobile-nav-item"><a href="#galeria" class="mobile-nav-link">Galería</a></li>
+                <li class="mobile-nav-item"><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+                <li class="mobile-nav-item"><a href="#reservas" class="mobile-nav-link btn btn-reserve">Reservar Mesa</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🎵</span>
+                <span>Música en Vivo Todos los Viernes</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">DONDE EL ROCK</span>
+                <span class="title-line highlight">SE ENCUENTRA CON</span>
+                <span class="title-line">LA TRADICIÓN</span>
+            </h1>
+            <p class="hero-subtitle">Un bar único donde la energía del rock & roll se fusiona con el alma de la música tradicional cántabra. Ambiente auténtico, buenas copas y noches inolvidables.</p>
+            <div class="hero-cta">
+                <a href="#reservas" class="btn btn-primary btn-large">Reservar Mesa</a>
+                <a href="#carta" class="btn btn-outline btn-large">Ver Carta</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Descubre más</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </div>
+        <div class="hero-elements">
+            <div class="element guitar"></div>
+            <div class="element mountain"></div>
+        </div>
+    </section>
+
+    <!-- Historia Section -->
+    <section class="section historia" id="historia">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestra Esencia</span>
+                <h2 class="section-title">DOS MUNDOS, <br><span class="highlight">UNA SOLA PASIÓN</span></h2>
+            </div>
+            
+            <div class="historia-grid">
+                <div class="historia-content">
+                    <p class="lead">Nacimos de una idea simple pero poderosa: ¿qué pasaría si el espíritu rebelde del rock se encontrara con la sabiduría ancestral de nuestra tierra cántabra?</p>
+                    
+                    <p>En este rincón único, las guitarras eléctricas dialogan con gaitas y panderetas. Aquí, una cerveza artesanal se sirve con la misma pasión con la que se toca un solo de AC/DC o se interpreta una jota montañesa.</p>
+                    
+                    <p>Somos más que un bar. Somos un punto de encuentro para amantes de la buena música, la comida con carácter y las noches que se alargan hasta el amanecer. Nuestro espacio respira madera, metal y tradición. Cada detalle ha sido pensado para crear una experiencia que honra tanto a Led Zeppelin como a los pueblos de la montaña cántabra.</p>
+                    
+                    <div class="historia-features">
+                        <div class="feature">
+                            <span class="feature-icon">🎸</span>
+                            <div class="feature-text">
+                                <h4>Música en Vivo</h4>
+                                <p>Rock, blues y folk cántabro cada semana</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍺</span>
+                            <div class="feature-text">
+                                <h4>Cerveza Artesanal</h4>
+                                <p>Selección de cervezas locales y nacionales</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔥</span>
+                            <div class="feature-text">
+                                <h4>Ambiente Único</h4>
+                                <p>Decoración que mezcla lo industrial con lo tradicional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="historia-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🎤</span>
+                            <span class="placeholder-text">Espacio para imagen del local</span>
+                        </div>
+                        <div class="image-accent"></div>
+                    </div>
+                    <div class="historia-stat">
+                        <span class="stat-number">+10</span>
+                        <span class="stat-label">Años de Historia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carta Section -->
+    <section class="section carta" id="carta">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Sabores con Carácter</span>
+                <h2 class="section-title">NUESTRA <span class="highlight">CARTA</span></h2>
+                <p class="section-subtitle">Productos de la tierra con un toque rockero. Tapas, raciones y platos para compartir mientras suena la mejor música.</p>
+            </div>
+            
+            <div class="carta-tabs">
+                <button class="tab-btn active" data-tab="tapas">Tapas & Raciones</button>
+                <button class="tab-btn" data-tab="principales">Platos Principales</button>
+                <button class="tab-btn" data-tab="bebidas">Bebidas</button>
+                <button class="tab-btn" data-tab="postres">Postres</button>
+            </div>
+            
+            <div class="carta-content">
+                <!-- Tapas & Raciones -->
+                <div class="tab-panel active" id="tapas">
+                    <div class="carta-grid">
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Bravas del Norte</h3>
+                                <span class="item-price">€6.50</span>
+                            </div>
+                            <p class="item-desc">Patatas bravas con nuestra salsa secreta picante y alioli casero</p>
+                            <span class="item-tag">Popular</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Croquetas de Cocido</h3>
+                                <span class="item-price">€8.00</span>
+                            </div>
+                            <p class="item-desc">Croquetas cremosas del cocido montañés, receta de la abuela</p>
+                            <span class="item-tag">Tradicional</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Alitas Rockeras</h3>
+                                <span class="item-price">€9.50</span>
+                            </div>
+                            <p class="item-desc">Alitas de pollo marinadas 24h con salsa BBQ casera</p>
+                            <span class="item-tag">Picante</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Queso Cabrales con Nueces</h3>
+                                <span class="item-price">€10.00</span>
+                            </div>
+                            <p class="item-desc">Tabla de queso Cabrales D.O.P. con nueces y pan tostado</p>
+                            <span class="item-tag">D.O.P.</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Pulpo a la Brasa</h3>
+                                <span class="item-price">€14.00</span>
+                            </div>
+                            <p class="item-desc">Pulpo gallego con patatas y pimentón de la Vera</p>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Tabla de Embutidos</h3>
+                                <span class="item-price">€12.00</span>
+                            </div>
+                            <p class="item-desc">Selección de embutidos ibéricos y quesos de la región</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Platos Principales -->
+                <div class="tab-panel" id="principales">
+                    <div class="carta-grid">
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Cocido Montañés</h3>
+                                <span class="item-price">€16.00</span>
+                            </div>
+                            <p class="item-desc">El clásico de Cantabria: alubias, berza, compango y panceta</p>
+                            <span class="item-tag">Tradicional</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Hamburguesa Rock & Roll</h3>
+                                <span class="item-price">€13.50</span>
+                            </div>
+                            <p class="item-desc">200g de ternera, bacon crujiente, queso cheddar, cebolla caramelizada y salsa especial</p>
+                            <span class="item-tag">Popular</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Sobao Pasiego a la Plancha</h3>
+                                <span class="item-price">€11.00</span>
+                            </div>
+                            <p class="item-desc">Sobao pasiego tostado con helado de vainilla y miel</p>
+                            <span class="item-tag">Postre-Salado</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Chuletón de Vaca Vieja</h3>
+                                <span class="item-price">€45.00/kg</span>
+                            </div>
+                            <p class="item-desc">Carne madurada 45 días, a elegir el peso (mínimo 600g)</p>
+                            <span class="item-tag">Premium</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bebidas -->
+                <div class="tab-panel" id="bebidas">
+                    <div class="carta-grid">
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Cerveza Artesana Local</h3>
+                                <span class="item-price">€4.50</span>
+                            </div>
+                            <p class="item-desc">Rotación de cervecerías cántabras: Beier, Somna, Siete Culebras...</p>
+                            <span class="item-tag">Km 0</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Orujo de Liébana</h3>
+                                <span class="item-price">€3.50</span>
+                            </div>
+                            <p class="item-desc">Destilado tradicional de la comarca de Liébana</p>
+                            <span class="item-tag">Tradicional</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Cócteles de Autor</h3>
+                                <span class="item-price">€9.00</span>
+                            </div>
+                            <p class="item-desc">Pregunta por nuestros cócteles especiales inspirados en canciones de rock</p>
+                            <span class="item-tag">Especialidad</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Vinos de la Tierra</h3>
+                                <span class="item-price">€3.00/copá</span>
+                            </div>
+                            <p class="item-desc">Selección de vinos tintos y blancos de bodegas del norte</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Postres -->
+                <div class="tab-panel" id="postres">
+                    <div class="carta-grid">
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Sobao Pasiego Casero</h3>
+                                <span class="item-price">€4.00</span>
+                            </div>
+                            <p class="item-desc">Receta tradicional con café o té</p>
+                            <span class="item-tag">Clásico</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Tarta de Queso al Estilo Rock</h3>
+                                <span class="item-price">€5.50</span>
+                            </div>
+                            <p class="item-desc">Tarta de queso cremosa con base de galleta y mermelada casera</p>
+                            <span class="item-tag">Popular</span>
+                        </div>
+                        
+                        <div class="carta-item">
+                            <div class="item-header">
+                                <h3 class="item-name">Flan de la Casa</h3>
+                                <span class="item-price">€4.50</span>
+                            </div>
+                            <p class="item-desc">Flan casero con caramelo líquido y nata montada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carta-cta">
+                <a href="#" class="btn btn-outline">Descargar Carta Completa (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Section -->
+    <section class="section eventos" id="eventos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Agenda Musical</span>
+                <h2 class="section-title">PRÓXIMOS <span class="highlight">EVENTOS</span></h2>
+            </div>
+            
+            <div class="eventos-grid">
+                <div class="evento-card featured">
+                    <div class="evento-image">
+                        <div class="image-placeholder evento-placeholder">
+                            <span class="placeholder-icon">🎸</span>
+                            <span class="placeholder-text">Concierto en Vivo</span>
+                        </div>
+                        <div class="evento-date">
+                            <span class="date-day">25</span>
+                            <span class="date-month">NOV</span>
+                        </div>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Concierto</span>
+                        <h3 class="evento-title">Noche de Rock Clásico</h3>
+                        <p class="evento-desc">Tributo a los grandes clásicos del rock de los 70s y 80s. Led Zeppelin, AC/DC, Queen y más.</p>
+                        <div class="evento-info">
+                            <span class="info-item">🕘 22:00h</span>
+                            <span class="info-item">🎟️ Entrada Libre</span>
+                        </div>
+                        <a href="#reservas" class="btn btn-primary btn-small">Reservar Mesa</a>
+                    </div>
+                </div>
+                
+                <div class="evento-card">
+                    <div class="evento-image">
+                        <div class="image-placeholder evento-placeholder">
+                            <span class="placeholder-icon">🪈</span>
+                            <span class="placeholder-text">Música Tradicional</span>
+                        </div>
+                        <div class="evento-date">
+                            <span class="date-day">02</span>
+                            <span class="date-month">DIC</span>
+                        </div>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Folk</span>
+                        <h3 class="evento-title">Jam Session Cántabra</h3>
+                        <p class="evento-desc">Músicos locales interpretando temas tradicionales con un toque moderno.</p>
+                        <div class="evento-info">
+                            <span class="info-item">🕘 21:30h</span>
+                            <span class="info-item">🎟️ Gratis</span>
+                        </div>
+                        <a href="#reservas" class="btn btn-outline btn-small">Reservar</a>
+                    </div>
+                </div>
+                
+                <div class="evento-card">
+                    <div class="evento-image">
+                        <div class="image-placeholder evento-placeholder">
+                            <span class="placeholder-icon">🎤</span>
+                            <span class="placeholder-text">Karaoke Night</span>
+                        </div>
+                        <div class="evento-date">
+                            <span class="date-day">08</span>
+                            <span class="date-month">DIC</span>
+                        </div>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Karaoke</span>
+                        <h3 class="evento-title">Karaoke Rockero</h3>
+                        <p class="evento-desc">Demuestra tu voz con los mejores temas del rock. ¡Premio al mejor cantante!</p>
+                        <div class="evento-info">
+                            <span class="info-item">🕙 23:00h</span>
+                            <span class="info-item">🎟️ Inscripción en barra</span>
+                        </div>
+                        <a href="#reservas" class="btn btn-outline btn-small">Reservar</a>
+                    </div>
+                </div>
+                
+                <div class="evento-card">
+                    <div class="evento-image">
+                        <div class="image-placeholder evento-placeholder">
+                            <span class="placeholder-icon">🍻</span>
+                            <span class="placeholder-text">Cata de Cervezas</span>
+                        </div>
+                        <div class="evento-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">DIC</span>
+                        </div>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Cata</span>
+                        <h3 class="evento-title">Cata de Cervezas Artesanas</h3>
+                        <p class="evento-desc">Descubre las mejores cervezas artesanas de Cantabria con maridaje incluido.</p>
+                        <div class="evento-info">
+                            <span class="info-item">🕖 20:00h</span>
+                            <span class="info-item">🎟️ 15€ (plazas limitadas)</span>
+                        </div>
+                        <a href="#reservas" class="btn btn-outline btn-small">Reservar Plaza</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="eventos-cta">
+                <a href="#" class="btn btn-outline">Ver Calendario Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section class="section galeria" id="galeria">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Ambiente</span>
+                <h2 class="section-title">EL <span class="highlight">LOCAL</span></h2>
+                <p class="section-subtitle">Sumérgete en nuestra atmósfera única donde cada rincón cuenta una historia.</p>
+            </div>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item large">
+                    <div class="galeria-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🎸</span>
+                            <span class="placeholder-text">Escenario Principal</span>
+                        </div>
+                    </div>
+                    <div class="galeria-overlay">
+                        <span>Nuestro Escenario</span>
+                    </div>
+                </div>
+                
+                <div class="galeria-item">
+                    <div class="galeria-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🍺</span>
+                            <span class="placeholder-text">Barra Central</span>
+                        </div>
+                    </div>
+                    <div class="galeria-overlay">
+                        <span>La Barra</span>
+                    </div>
+                </div>
+                
+                <div class="galeria-item">
+                    <div class="galeria-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">👥</span>
+                            <span class="placeholder-text">Zona de Mesas</span>
+                        </div>
+                    </div>
+                    <div class="galeria-overlay">
+                        <span>Zona de Ambiente</span>
+                    </div>
+                </div>
+                
+                <div class="galeria-item">
+                    <div class="galeria-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🎤</span>
+                            <span class="placeholder-text">Detalle Decoración</span>
+                        </div>
+                    </div>
+                    <div class="galeria-overlay">
+                        <span>Detalles con Alma</span>
+                    </div>
+                </div>
+                
+                <div class="galeria-item tall">
+                    <div class="galeria-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🌙</span>
+                            <span class="placeholder-text">Noche en el Bar</span>
+                        </div>
+                    </div>
+                    <div class="galeria-overlay">
+                        <span>Noches Inolvidables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservas Section -->
+    <section class="section reservas" id="reservas">
+        <div class="container">
+            <div class="reservas-wrapper">
+                <div class="reservas-content">
+                    <span class="section-tag">Tu Mesa Te Espera</span>
+                    <h2 class="section-title">HAZ TU <span class="highlight">RESERVA</span></h2>
+                    <p class="reservas-text">¿Planeas una noche especial? Reserva tu mesa y asegúrate de vivir la mejor experiencia. Para grupos grandes o eventos privados, contáctanos directamente.</p>
+                    
+                    <div class="reservas-features">
+                        <div class="r-feature">
+                            <span class="r-icon">✓</span>
+                            <span>Confirmación inmediata</span>
+                        </div>
+                        <div class="r-feature">
+                            <span class="r-icon">✓</span>
+                            <span>Sin coste de reserva</span>
+                        </div>
+                        <div class="r-feature">
+                            <span class="r-icon">✓</span>
+                            <span>Mejor mesa garantizada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservas-form-wrapper">
+                    <form class="reservas-form" id="reservasForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Tu teléfono">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="personas">Personas</label>
+                                <select id="personas" name="personas" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="1">1 persona</option>
+                                    <option value="2">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7+">Más de 6</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hora">Hora</label>
+                                <select id="hora" name="hora" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="22:30">22:30</option>
+                                    <option value="23:00">23:00</option>
+                                    <option value="23:30">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Comentarios (opcional)</label>
+                            <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Alguna petición especial?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Confirmar Reserva</button>
+                        
+                        <p class="form-note">Te confirmaremos la reserva por email o teléfono en menos de 24 horas.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="section contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <span class="section-tag">Encuéntranos</span>
+                    <h2 class="section-title">CONTACTO <span class="highlight">& UBICACIÓN</span></h2>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">📍</span>
+                            <div class="info-content">
+                                <h4>Dirección</h4>
+                                <p>Calle del Rock, 123<br>39001 Santander, Cantabria</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-icon">🕐</span>
+                            <div class="info-content">
+                                <h4>Horario</h4>
+                                <p>Mar-Jue: 18:00 - 02:00<br>Vie-Sáb: 18:00 - 03:30<br>Dom: 17:00 - 01:00<br>Lunes: Cerrado</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-icon">📞</span>
+                            <div class="info-content">
+                                <h4>Contacto</h4>
+                                <p>+34 942 00 00 00<br>info@rockycantabro.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 2.52-1.12 4.84-2.9 6.24-1.72 1.39-4.02 1.89-6.18 1.45-2.92-.62-5.31-2.95-6.05-5.83-.73-2.89.22-6.06 2.37-8.09 1.68-1.56 4.02-2.28 6.28-1.94v4.12c-.97-.3-2.05-.18-2.92.38-.87.55-1.44 1.52-1.51 2.56-.08 1.32.62 2.58 1.76 3.26 1.14.69 2.6.66 3.71-.08 1.11-.74 1.77-2.02 1.77-3.36V.02h-3.41z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contacto-map">
+                    <div class="map-placeholder">
+                        <span class="placeholder-icon">🗺️</span>
+                        <span class="placeholder-text">Mapa de Ubicación</span>
+                        <p class="placeholder-sub">Calle del Rock, 123<br>Santander, Cantabria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-wrapper footer-logo">
+                        <img src="assets/images/LOGO.jpg" alt="Bar Rock & Cántabro" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback">
+                            <span class="logo-icon">🎸</span>
+                            <span class="logo-text">ROCK & CÁNTABRO</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Donde el rock & roll se encuentra con la tradición cántabra. Un bar con alma, música y carácter propio.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#carta">Carta</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Calle del Rock, 123<br>&nbsp;&nbsp;&nbsp;39001 Santander</li>
+                        <li>📞 +34 942 00 00 00</li>
+                        <li>✉️ info@rockycantabro.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li><span>Mar-Jue:</span> 18:00 - 02:00</li>
+                        <li><span>Vie-Sáb:</span> 18:00 - 03:30</li>
+                        <li><span>Dom:</span> 17:00 - 01:00</li>
+                        <li><span>Lun:</span> Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Bar Rock & Cántabro. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Aviso Legal</a>
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Política de Cookies</a>
+                    </div>
+                </div>
+                <div class="footer-made">
+                    <span>Hecho con 🎸 y 🍺 en Cantabria</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
